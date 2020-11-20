@@ -1,38 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+body {
+    background-color: rgb(240, 240, 240);
+    font-size: 20px;
+    font-family: 'Gochi Hand';
+    letter-spacing: 0.1em;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NavList {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(220, 220, 220);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NavItem a {
+    text-decoration: none;
+    color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.StudentsListContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.StudentInput {
+    border: none;
+    width: 700px;
+    padding-right: 0px;
+    font-size: 20px;
+    font-family: 'Gochi Hand';
+    letter-spacing: 0.1em;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgba(80, 92, 51, 0.17);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.StudentInput:focus {
+    outline: none;
+}
+
+.AddBtn {
+    border: none;
+    padding-left: 0px;
+    font-size: 20px;
+    font-family: 'Gochi Hand';
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(80, 92, 51, 0.17);
+    border-right: 5px solid rgba(80, 92, 51, 0.17);
+}
+
+.AddBtn:focus {
+    outline: none;
+}
+
+.StudentsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.Person {
+    margin: 10px 10px 10px 30px;
+}
+
+.Person:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.GroupBtnContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.GroupBtn {
+    border: none;
+    font-size: 20px;
+    font-family: 'Gochi Hand';
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(80, 92, 51, 0.17);
+    border-right: 5px solid rgba(80, 92, 51, 0.17);
+}
+
+.GroupBtn:focus {
+    outline: none;
+}
+
+.GroupsContainer {
+    text-align: left;
+    margin: 50px;
+}
+
+.Group {
+    margin-bottom: 40px;
+}
+
+.TimeZonesContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+.TimeZone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 0 30%;
+    height: 100px;
+    margin: 20px;
+    border: 2px solid darkblue;
+    border-radius: 5%;
+}
+
+.CityName {
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.CityInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.WeatherIcon {
+    height: 3em;
+}
+
+.TempInfo {
+    padding: 1em;
+    font-size: 1em;
 }
