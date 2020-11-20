@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment-timezone';
 
 function TimeZones({ cities, weather, time }) {
     return (
