@@ -9,7 +9,6 @@ import GroupCreator from './components/GroupCreator';
 import FridayTalks from './components/FridayTalks';
 import { students } from './data/Students';
 import { citiesID } from './data/CitiesID';
-import { weatherKey } from './data/Key';
 
 function getCities() {
     let cities = [];
@@ -25,6 +24,7 @@ function getCities() {
 const cities = getCities();
 
 function createRequest(city) {
+    const weatherKey = process.env.REACT_APP_WEATHER_KEY;
     let request = 'https://api.weatherbit.io/v2.0/current?';
     request += 'city_id=' + citiesID[0][city];
     request += '&key=' + weatherKey;
